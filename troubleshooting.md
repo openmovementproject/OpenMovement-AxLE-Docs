@@ -22,5 +22,3 @@ Block sync failed is caused by a block failing checksum validation. The block is
 
 This exception is thrown when the firmware is unrecognised by the library. This exception can occur when the device interrogation has failed and may be fixed by retrying connection.
 
-
-

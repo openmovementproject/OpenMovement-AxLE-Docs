@@ -105,28 +105,3 @@ Disconnecting from an AxLE once you are finished with the device is very importa
 await manager.DisconnectDevice(device);
 ```
 
-### Using the Devices Nearby monitor
-
-The AxLE manager can monitor for devices nearby and keep you up to date as devices appear and disappear from nearby your device.
-
-There are two properties for you to configure in this instance, the `nearbyTimeout` parameter on the constructor and the `RssiFilter` \(lower is closer\) property on the manager.
-
-{% hint style="danger" %}
-On Windows the Nearby monitor may not work as expected. The Windows Bluetooth APIs are incomplete and lack the functionality required to implement a complete nearby monitor.
-{% endhint %}
-
-Once the nearby monitor is configured you can start using the relevant callbacks to monitor devices:
-
-```csharp
-manager.DeviceFound += (sender, serial) =>
-{
-    // Called each time a device that was once lost is found.
-    // Like the ring of power...
-};
-
-manager.DeviceLost += (sender, serial) =>
-{
-    // Called each time a device is considered lost.
-};
-```
-
