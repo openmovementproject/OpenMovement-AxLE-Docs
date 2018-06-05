@@ -12,8 +12,6 @@ Functionality:
 
 This application is available on the [iOS](https://itunes.apple.com/us/app/openmovement-axle/id1298548301?ls=1&mt=8) and [Android](https://play.google.com/store/apps/details?id=uk.ac.ncl.OpenLab.OpenMovement.AxLE.App) app stores.
 
-### [DOCUMENTATION](https://openmovement.gitbook.io/openmovement-axle)
-
 ## Getting Started
 
 The OpenMovement AxLE Band API is a set of C\# libraries with pre-built support for Xamarin \(iOS, Android & UWP\) and Windows 10 APIs.
@@ -27,7 +25,12 @@ $ git submodule add -b production https://github.com/digitalinteraction/OpenMove
 ```
 
 {% hint style="info" %}
-The OpenMovement AxLE library will be migrated to a NuGet package in future simplifying this process.
+The OpenMovement AxLE library has been migrated to NuGet packages which are available for each platform \(still in beta\):
+
+* OpenMovement AxLE Comms
+* OpenMovement AxLE Comms iOS
+* OpenMovement AxLE Comms Android
+* OpenMovement AxLE Service
 {% endhint %}
 
 {% hint style="warning" %}

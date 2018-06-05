@@ -117,5 +117,3 @@ await device.StopAccelerometerStream();
 Note, there are 25 samples per block. To show a smooth stream of data on a UI you need to stagger each sample.
 {% endhint %}
 
-
-
