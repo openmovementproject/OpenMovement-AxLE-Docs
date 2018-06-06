@@ -21,7 +21,9 @@ The OpenMovement AxLE Band API is a set of C\# libraries with pre-built support 
 To get started with a Xamarin or Windows application create a new project in Visual Studio. Run the following command to add the OpenMovement AxLE respository as a sub-module.
 
 ```bash
-$ git submodule add -b production https://github.com/digitalinteraction/OpenMovement-AxLE
+git submodule add https://github.com/digitalinteraction/OpenMovement-AxLE-Comms OpenMovement.AxLE.Comms
+cd OpenMovement.AxLE.Comms
+git submodule update --init
 ```
 
 {% hint style="info" %}
