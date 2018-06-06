@@ -39,7 +39,13 @@ The OpenMovement AxLE library has been migrated to NuGet packages which are avai
 When using a non-Universal Windows application you must manually add the `Windows.Devices` namespace as outlined [here](http://kiewic.com/2015-11-24/how-to-use-windows-10-runtime-store-universal-apis-in-desktop-console-apps). Ensure the Build flags `WIN_CONSOLE` or `WINDOWS_UWP` are set appropriately.
 {% endhint %}
 
-Once added as a submodule include the `OpenMovement.AxLE.Comms` and `OpenMovement.AxLE.Service` as referenced shared projects in your new solution.
+Once added as a submodule include the following projects as existing projects to your solution based upon which platform you are using:
+
+* OpenMovement.AxLE.Service
+* OpenMovement.AxLE.Comms
+* OpenMovement.AxLE.Comms.Bluetooth.Android
+* OpenMovement.AxLE.Comms.Bluetooth.iOS
+* OpenMovement.AxLE.Comms.Bluetooth.Windows
 
 #### Other Platforms
 
